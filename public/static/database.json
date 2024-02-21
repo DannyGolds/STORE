@@ -1,0 +1,40 @@
+{
+    "mainView": [
+        {
+            "id": 1,
+            "title": "Название мероприятия",
+            "url": "",
+            "imgPath": "man.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Мясные блюда",
+            "url": "",
+            "imgPath": "stake.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Холодные блюда",
+            "url": "",
+            "imgPath": "veget.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Десерты",
+            "url": "",
+            "imgPath": "desert.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Алкогольные напитки",
+            "url": "",
+            "imgPath": "alcohol.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Горячие напитки",
+            "url": "",
+            "imgPath": "hots.jpg"
+        }
+    ]
+}

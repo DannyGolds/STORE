@@ -1,0 +1,44 @@
+.m-cart {
+  height: 53vh;
+  aspect-ratio: 0.52;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  &-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: $m-y-col;
+    display: flex;
+    background: #000000d7;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 72%;
+    height: 11%;
+    border-radius: 0 10px 10px 0;
+  }
+  &:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.247);
+  }
+}
+
+@media (max-width: 1165px) {
+  .m-cart {
+    max-height: 335px;
+    &-description {
+      bottom: 20px;
+      height: 15%;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}

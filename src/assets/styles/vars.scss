@@ -1,0 +1,18 @@
+$m-y-col: #ff9100;
+$m-d-col: #16181b;
+$m-t-col: #73777d;
+$btn-d-t-col: #1f2125;
+$btn-l-t-col: #fff;
+$dark-cart-bg: #1f2125;
+$cart-desc: #7a7f84;
+$dark-cart-text: #fff;
+$icns-bg: #707070;
+%cart-br {
+  border-radius: 10px;
+}
+%btn-cart-l-br {
+  border-radius: 22px 0 0 22px;
+}
+%btn-cart-r-br {
+  border-radius: 0 22px 22px 0;
+}
