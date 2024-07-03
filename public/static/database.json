@@ -1,40 +1,134 @@
 {
-    "mainView": [
-        {
-            "id": 1,
-            "title": "Название мероприятия",
-            "url": "",
-            "imgPath": "man.jpg"
+  "mainView": [
+    {
+      "id": 1,
+      "title": "Название мероприятия",
+      "url": "/menu",
+      "imgPath": "man.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Мясные блюда",
+      "url": "/menu",
+      "imgPath": "stake.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Холодные блюда",
+      "url": "/menu",
+      "imgPath": "veget.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Десерты",
+      "url": "/menu",
+      "imgPath": "desert.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Алкогольные напитки",
+      "url": "/menu",
+      "imgPath": "alcohol.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Горячие напитки",
+      "url": "/menu",
+      "imgPath": "hots.jpg"
+    }
+  ],
+  "menu": {
+    "alcohol": {
+      "title": "Алкогольные напитки",
+      "assort": {
+        "wines": {
+          "title": "Вина",
+          "assort": [
+            {
+              "img": "https://srokgodnosti.ru/images/off-line/article/1390/5.jpg",
+              "title": "Вино Puressio belnuoritto bancherio",
+              "desc": "Красное вино. Молдавская выдержка. Изысканные нотки имбиря и медовый оттенок. 1996 года",
+              "price": 80000
+            },
+            {
+              "img": "https://na-dache.pro/uploads/posts/2021-05/1620441858_19-p-butilka-vina-foto-24.jpg",
+              "title": "Вино Sion Hill Vinery",
+              "desc": "Это красное вино представляет собой купаж из 89% Petite Pearl и 11% Isabella. Petite Pearl - франко-американский гибрид.",
+              "price": 120000
+            },
+            {
+              "img": "https://get.pxhere.com/photo/liquid-grape-wine-glass-italy-drink-shelf-bottle-alcohol-wine-bottle-celebrate-alcoholic-bottles-wooden-wine-rack-man-made-object-chianti-776337.jpg",
+              "title": "Screaming Eagle",
+              "desc": " Screaming Eagle 1992 года, напиток пурпурного цвета с элегантными фруктовыми нотками. В 2008 году Screaming Eagle было продано в ходе благотворительного аукциона в долине Напа за 500 тысяч долларов. Обладателем уникального вина стал топ-менеджер компании Cisco Systems Чейс Бейли.",
+              "price": 12000000
+            }
+          ]
         },
-        {
-            "id": 2,
-            "title": "Мясные блюда",
-            "url": "",
-            "imgPath": "stake.jpg"
+        "vodka": {
+          "title": "Водка",
+          "assort": [
+            {
+              "imgDarkName": "/wine.jpg",
+              "imgBrightName": "/wine-bright.jpg",
+              "title": "Вино Puressio el beruccio bancherio",
+              "desc": "Красное вино. Шведская выдержка. Изысканные нотки имбиря и медовый оттенок. 1957 года",
+              "price": 6050
+            },
+            {}
+          ]
         },
-        {
-            "id": 3,
-            "title": "Холодные блюда",
-            "url": "",
-            "imgPath": "veget.jpg"
+        "shampane": {
+          "title": "Шампанское",
+          "assort": [{}, {}]
         },
-        {
-            "id": 4,
-            "title": "Десерты",
-            "url": "",
-            "imgPath": "desert.jpg"
+        "beer": {
+          "title": "Пиво",
+          "assort": [{}, {}]
         },
-        {
-            "id": 5,
-            "title": "Алкогольные напитки",
-            "url": "",
-            "imgPath": "alcohol.jpg"
+        "vhiskey": {
+          "title": "Виски",
+          "assort": [{}, {}]
         },
-        {
-            "id": 6,
-            "title": "Горячие напитки",
-            "url": "",
-            "imgPath": "hots.jpg"
+        "liquor": {
+          "title": "Ликер",
+          "assort": [{}, {}]
         }
-    ]
+      }
+    },
+    "noalco": {
+      "title": "Безалкогольные напитки",
+      "assort": {
+        "soda": {
+          "title": "Газировки",
+          "assort": [{}, {}]
+        },
+        "shake": {
+          "title": "Коктейли",
+          "assort": [{}, {}]
+        }
+      }
+    },
+    "hots": {
+      "title": "Горячие напитки",
+      "assort": {
+        "coffee": {
+          "title": "Кофе",
+          "assort": [
+            {
+              "imgDarkName": "/coffee.jpg",
+              "imgBrightName": "/coffee-bright.jpg",
+              "title": "Кофе Jacob's Monarch",
+              "desc": "Крепкий черный кофе из перемолотых зерен какао, придающих натуральный вкус кофе.",
+              "price": 1800
+            },
+            {}
+          ]
+        },
+        "tea": {
+          "title": "Чай",
+          "assort": [{}, {}]
+        }
+      }
+    }
+  }
 }

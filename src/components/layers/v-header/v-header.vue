@@ -53,7 +53,7 @@
             <btn
               text="акции"
               :img="fire"
-              br="50"
+              br="50px"
               height="40"
               color="#16181b"
               @click="pushToPage('/stocks')"
@@ -68,7 +68,7 @@
 <script>
 import btn from "@/components/shared/ui-btn/shared-btn.vue"
 import { nav, socials } from "@/components/shared/navigation.js"
-import { fire, busket } from "@/components/shared/icons.js"
+import { fire } from "@/components/shared/icons.js"
 export default {
   components: {
     btn,
@@ -78,7 +78,6 @@ export default {
       fire,
       nav,
       socials,
-      busket,
       isMobileMenuActive: false,
     }
   },

@@ -1,0 +1,145 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  &-items {
+    padding-left: 15px;
+    &-item > button {
+      margin: 20px 0;
+      background: transparent;
+      border: none;
+      color: $m-t-col;
+      font-family: "SF Pro Display", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      cursor: pointer;
+      &.active {
+        color: $m-y-col;
+      }
+    }
+    &-title {
+      font-size: 16px;
+      font-family: "SF Pro Display", sans-serif;
+      font-weight: 400;
+      width: 97%;
+      color: $m-t-col;
+      cursor: pointer;
+    }
+  }
+  &-item {
+    position: relative;
+    margin-bottom: 20px;
+    &.active {
+      > p {
+        color: $m-y-col;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 4px;
+      width: 0;
+      height: 0;
+      cursor: pointer;
+      border-left: 6px solid $m-t-col;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-right: 0 solid transparent;
+    }
+    &.active::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 4px;
+      width: 0;
+      height: 0;
+      cursor: pointer;
+      border-top: 6px solid $m-y-col;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 0 solid transparent;
+    }
+  }
+}
+
+.filt {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "SF Pro Display", sans-serif;
+  color: $m-y-col;
+  &:nth-child(2) {
+    margin-left: 30px;
+  }
+}
+
+button.filter-btn {
+  width: 24px;
+  height: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  margin-left: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.filter-item {
+  position: relative;
+  background: transparent;
+  border: none;
+  height: 30px;
+  padding: 5px;
+  color: $m-t-col;
+  cursor: pointer;
+  border-radius: 0;
+  option {
+    background: $m-d-col;
+    &:focus {
+      background: #000;
+    }
+  }
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+aside.menu-bar {
+  grid-row-start: 1;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border-radius: 6px;
+  padding: 20px 30px;
+  background: $dark-cart-bg;
+}
+
+.menu-book {
+  grid-row-start: 1;
+  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  display: grid;
+  grid-auto-rows: 80px;
+  gap: 15px;
+}
+
+.menu-book-grid {
+  grid-row-start: 1;
+  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 8;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}

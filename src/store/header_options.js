@@ -1,5 +1,5 @@
 let headerOptions = {
-    basketValue: 0,
+  busketValue: 0,
 }
 
 export default headerOptions

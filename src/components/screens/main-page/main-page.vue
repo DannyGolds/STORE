@@ -34,11 +34,11 @@
       </div>
       <div class="galery-container" ref="cont" scroll="no">
         <main-cart
-          v-for="cart in gallery"
+          v-for="cart in getGallery"
           :key="cart.img"
-          :img="require(`@/assets/images/content/${cart.img}.jpg`)"
+          :img="require(`@/assets/images/content/${cart.imgPath}`)"
           :title="cart.title"
-          @click="$router.push({ name: cart.url })"
+          @click="$router.push({ path: cart.url })"
         />
       </div>
     </div>
@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import gallery from "./gallery.js"
 import btn from "@/components/shared/ui-btn/shared-btn.vue"
 import mainCart from "@/components/shared/ui-main-cart/ui-cart.vue"
 import { fire } from "@/components/shared/icons.js"
@@ -58,7 +57,6 @@ export default {
   },
   data() {
     return {
-      gallery,
       fire,
     }
   },
@@ -111,6 +109,14 @@ export default {
       document.addEventListener("mousemove", onmousemove)
 
       document.addEventListener("mouseup", onMouseUp)
+    },
+  },
+  created() {
+    this.$store.dispatch("initMainGallery")
+  },
+  computed: {
+    getGallery() {
+      return this.$store.getters.getMainGallery
     },
   },
 }

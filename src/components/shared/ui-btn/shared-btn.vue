@@ -2,12 +2,13 @@
   <button
     class="shared-btn"
     :style="{
-      borderRadius: `${br}px`,
+      borderRadius: br,
       padding,
       width: `${width}px`,
       height: `${height}px`,
       color,
       flexDirection: imgAfter ? 'row-reverse' : 'row',
+      textTransform: tt,
     }"
   >
     <span v-html="img" :style="{ margin: imgMargin }"></span>
@@ -21,6 +22,10 @@ export default {
     br: {
       type: String,
       default: "20",
+    },
+    tt: {
+      type: String,
+      default: "uppercase",
     },
     img: {
       type: String,
@@ -72,7 +77,8 @@ export default {
   cursor: pointer;
   transition: 0.3s ease;
   &:hover {
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #ff8000a6;
+    background-image: linear-gradient(#fdb806, #fd8006);
   }
 }
 </style>
