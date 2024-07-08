@@ -5,17 +5,17 @@ import aboutPage from "@/components/screens/about-page/about-page.vue"
 
 const routes = [
   {
-    path: "/",
+    path: "/STORE/",
     name: "main",
     component: mainPage,
   },
   {
-    path: "/menu",
+    path: "/STORE/menu",
     name: "menu",
     component: menuPage,
   },
   {
-    path: "/about",
+    path: "/STORE/about",
     name: "about",
     component: aboutPage,
   },
