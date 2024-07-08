@@ -38,7 +38,7 @@
           :key="cart.img"
           :img="require(`@/assets/images/content/${cart.imgPath}`)"
           :title="cart.title"
-          @click="$router.push({ path: cart.url })"
+          @click="$router.push({ name: cart.url })"
         />
       </div>
     </div>
