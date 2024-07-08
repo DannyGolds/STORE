@@ -16,12 +16,12 @@ let store = createStore({
       state.headerOptions.busketValue++
     },
     setMainGallery(state) {
-      axios.get("/static/database.json").then((res) => {
+      axios.get("static/database.json").then((res) => {
         state.mainGallery = res.data.mainView
       })
     },
     setMenu(state) {
-      axios.get("/static/database.json").then((res) => {
+      axios.get("static/database.json").then((res) => {
         state.menu = res.data.menu
       })
     },
