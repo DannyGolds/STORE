@@ -3,37 +3,37 @@
     {
       "id": 1,
       "title": "Название мероприятия",
-      "url": "/menu",
+      "url": "menu",
       "imgPath": "man.jpg"
     },
     {
       "id": 2,
       "title": "Мясные блюда",
-      "url": "/menu",
+      "url": "menu",
       "imgPath": "stake.jpg"
     },
     {
       "id": 3,
       "title": "Холодные блюда",
-      "url": "/menu",
+      "url": "menu",
       "imgPath": "veget.jpg"
     },
     {
       "id": 4,
       "title": "Десерты",
-      "url": "/menu",
+      "url": "menu",
       "imgPath": "desert.jpg"
     },
     {
       "id": 5,
       "title": "Алкогольные напитки",
-      "url": "/menu",
+      "url": "menu",
       "imgPath": "alcohol.jpg"
     },
     {
       "id": 6,
       "title": "Горячие напитки",
-      "url": "/menu",
+      "url": "menu",
       "imgPath": "hots.jpg"
     }
   ],
