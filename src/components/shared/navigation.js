@@ -1,44 +1,42 @@
-
-
 export const nav = [
   {
     urlTitle: "главная",
-    urlPath: "/STORE/",
+    urlPath: "/",
     urlName: "main",
   },
   {
     urlTitle: "меню",
-    urlPath: "/STORE/menu",
+    urlPath: "/menu/cmn",
     urlName: "menu",
   },
   {
     urlTitle: "о нас",
-    urlPath: "/STORE/about",
+    urlPath: "/about",
     urlName: "about",
   },
   {
     urlTitle: "галарея",
-    urlPath: "/STORE/gallery",
+    urlPath: "/gallery",
     urlName: "gallery",
   },
   {
     urlTitle: "вакансии",
-    urlPath: "/STORE/vacancies",
+    urlPath: "/vacancies",
     urlName: "vacancies",
   },
   {
     urlTitle: "блог",
-    urlPath: "/STORE/blog",
+    urlPath: "/blog",
     urlName: "blog",
   },
   {
     urlTitle: "бронирование",
-    urlPath: "/STORE/booking",
+    urlPath: "/booking",
     urlName: "booking",
   },
   {
     urlTitle: "вход/регистрация",
-    urlPath: "/STORE/login",
+    urlPath: "/login",
     urlName: "main",
   },
 ]

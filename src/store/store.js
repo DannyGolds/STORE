@@ -1,14 +1,22 @@
 import { createStore } from "vuex"
 import headerOptions from "./header_options"
+import menuOptions from "./menu_options"
 
 import axios from "axios"
+
+async function getData() {
+  return await axios.get("http://localhost:8080/static/database.json")
+}
 
 let store = createStore({
   state() {
     return {
       headerOptions,
+      menuOptions,
+      menuOptions,
       mainGallery: [],
       menu: [],
+      lastSeenProductFull,
     }
   },
   mutations: {
@@ -16,14 +24,19 @@ let store = createStore({
       state.headerOptions.busketValue++
     },
     setMainGallery(state) {
-      axios.get("static/database.json").then((res) => {
+      getData().then((res) => {
         state.mainGallery = res.data.mainView
       })
     },
     setMenu(state) {
-      axios.get("static/database.json").then((res) => {
+      getData().then((res) => {
         state.menu = res.data.menu
       })
+    },
+    setMenuOptions(state, payload) {
+      for (let [key, value] of Object.entries(payload)) {
+        state.menuOptions[key] = value
+      }
     },
   },
   getters: {
@@ -36,6 +49,9 @@ let store = createStore({
     getMenu(state) {
       return state.menu
     },
+    getMenuOptions(state) {
+      return state.menuOptions
+    },
   },
   actions: {
     pushToBusket({ commit }) {
@@ -46,6 +62,9 @@ let store = createStore({
     },
     initMenuPage({ commit }) {
       commit("setMenu")
+    },
+    setMenuOptions({ commit }, payload) {
+      commit("setMenuOptions", payload)
     },
   },
 })

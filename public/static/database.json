@@ -48,19 +48,64 @@
               "img": "https://srokgodnosti.ru/images/off-line/article/1390/5.jpg",
               "title": "Вино Puressio belnuoritto bancherio",
               "desc": "Красное вино. Молдавская выдержка. Изысканные нотки имбиря и медовый оттенок. 1996 года",
-              "price": 80000
+              "price": 80000,
+              "id": "07f07d"
             },
             {
               "img": "https://na-dache.pro/uploads/posts/2021-05/1620441858_19-p-butilka-vina-foto-24.jpg",
               "title": "Вино Sion Hill Vinery",
               "desc": "Это красное вино представляет собой купаж из 89% Petite Pearl и 11% Isabella. Petite Pearl - франко-американский гибрид.",
-              "price": 120000
+              "price": 120000,
+              "id": "07ggdk07d"
             },
             {
               "img": "https://get.pxhere.com/photo/liquid-grape-wine-glass-italy-drink-shelf-bottle-alcohol-wine-bottle-celebrate-alcoholic-bottles-wooden-wine-rack-man-made-object-chianti-776337.jpg",
               "title": "Screaming Eagle",
               "desc": " Screaming Eagle 1992 года, напиток пурпурного цвета с элегантными фруктовыми нотками. В 2008 году Screaming Eagle было продано в ходе благотворительного аукциона в долине Напа за 500 тысяч долларов. Обладателем уникального вина стал топ-менеджер компании Cisco Systems Чейс Бейли.",
-              "price": 12000000
+              "price": 12000000,
+              "id": "d47ds0"
+            },
+            {
+              "img": "https://srokgodnosti.ru/images/off-line/article/1390/5.jpg",
+              "title": "Вино Puressio belnuoritto bancherio",
+              "desc": "Красное вино. Молдавская выдержка. Изысканные нотки имбиря и медовый оттенок. 1996 года",
+              "price": 80000,
+              "id": "b6dh30d"
+            },
+            {
+              "img": "https://na-dache.pro/uploads/posts/2021-05/1620441858_19-p-butilka-vina-foto-24.jpg",
+              "title": "Вино Sion Hill Vinery",
+              "desc": "Это красное вино представляет собой купаж из 89% Petite Pearl и 11% Isabella. Petite Pearl - франко-американский гибрид.",
+              "price": 120000,
+              "id": "5523hr9d9"
+            },
+            {
+              "img": "https://get.pxhere.com/photo/liquid-grape-wine-glass-italy-drink-shelf-bottle-alcohol-wine-bottle-celebrate-alcoholic-bottles-wooden-wine-rack-man-made-object-chianti-776337.jpg",
+              "title": "Screaming Eagle",
+              "desc": " Screaming Eagle 1992 года, напиток пурпурного цвета с элегантными фруктовыми нотками. В 2008 году Screaming Eagle было продано в ходе благотворительного аукциона в долине Напа за 500 тысяч долларов. Обладателем уникального вина стал топ-менеджер компании Cisco Systems Чейс Бейли.",
+              "price": 12000000,
+              "id": "0efbhd53b"
+            },
+            {
+              "img": "https://srokgodnosti.ru/images/off-line/article/1390/5.jpg",
+              "title": "Вино Puressio belnuoritto bancherio",
+              "desc": "Красное вино. Молдавская выдержка. Изысканные нотки имбиря и медовый оттенок. 1996 года",
+              "price": 80000,
+              "id": "ra42fdjk9"
+            },
+            {
+              "img": "https://na-dache.pro/uploads/posts/2021-05/1620441858_19-p-butilka-vina-foto-24.jpg",
+              "title": "Вино Sion Hill Vinery",
+              "desc": "Это красное вино представляет собой купаж из 89% Petite Pearl и 11% Isabella. Petite Pearl - франко-американский гибрид.",
+              "price": 120000,
+              "id": "g63d02g"
+            },
+            {
+              "img": "https://get.pxhere.com/photo/liquid-grape-wine-glass-italy-drink-shelf-bottle-alcohol-wine-bottle-celebrate-alcoholic-bottles-wooden-wine-rack-man-made-object-chianti-776337.jpg",
+              "title": "Screaming Eagle",
+              "desc": " Screaming Eagle 1992 года, напиток пурпурного цвета с элегантными фруктовыми нотками. В 2008 году Screaming Eagle было продано в ходе благотворительного аукциона в долине Напа за 500 тысяч долларов. Обладателем уникального вина стал топ-менеджер компании Cisco Systems Чейс Бейли.",
+              "price": 12000000,
+              "id": "7dhe73fs"
             }
           ]
         },
@@ -68,13 +113,13 @@
           "title": "Водка",
           "assort": [
             {
-              "imgDarkName": "/wine.jpg",
-              "imgBrightName": "/wine-bright.jpg",
-              "title": "Вино Puressio el beruccio bancherio",
+
+              "img": "https://pngimg.com/uploads/vodka/vodka_PNG73845.png",
+              "title": "Водка ",
               "desc": "Красное вино. Шведская выдержка. Изысканные нотки имбиря и медовый оттенок. 1957 года",
-              "price": 6050
-            },
-            {}
+              "price": 6050,
+              "id": "724tdcdhfj73v"
+            }
           ]
         },
         "shampane": {

@@ -9,6 +9,11 @@
       color,
       flexDirection: imgAfter ? 'row-reverse' : 'row',
       textTransform: tt,
+      position,
+      top,
+      bottom,
+      right,
+      left,
     }"
   >
     <span v-html="img" :style="{ margin: imgMargin }"></span>
@@ -19,6 +24,22 @@
 <script>
 export default {
   props: {
+    top: {
+      type: String,
+    },
+    bottom: {
+      type: String,
+    },
+    right: {
+      type: String,
+    },
+    left: {
+      type: String,
+    },
+    position: {
+      type: String,
+      default: "static",
+    },
     br: {
       type: String,
       default: "20",
@@ -42,6 +63,7 @@ export default {
     text: {
       type: String,
       default: "",
+      required: true,
     },
     padding: {
       type: String,

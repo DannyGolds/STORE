@@ -15,6 +15,7 @@
       cursor: pointer;
       &.active {
         color: $m-y-col;
+        text-decoration: underline;
       }
     }
     &-title {
@@ -63,43 +64,6 @@
   }
 }
 
-.filt {
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "SF Pro Display", sans-serif;
-  color: $m-y-col;
-  &:nth-child(2) {
-    margin-left: 30px;
-  }
-}
-
-button.filter-btn {
-  width: 24px;
-  height: 20px;
-  border: none;
-  background-repeat: no-repeat;
-  margin-left: 25px;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.filter-item {
-  position: relative;
-  background: transparent;
-  border: none;
-  height: 30px;
-  padding: 5px;
-  color: $m-t-col;
-  cursor: pointer;
-  border-radius: 0;
-  option {
-    background: $m-d-col;
-    &:focus {
-      background: #000;
-    }
-  }
-}
-
 .content {
   position: absolute;
   top: 0;
@@ -121,25 +85,4 @@ aside.menu-bar {
   border-radius: 6px;
   padding: 20px 30px;
   background: $dark-cart-bg;
-}
-
-.menu-book {
-  grid-row-start: 1;
-  grid-row-end: 9;
-  grid-column-start: 2;
-  grid-column-end: 8;
-  display: grid;
-  grid-auto-rows: 80px;
-  gap: 15px;
-}
-
-.menu-book-grid {
-  grid-row-start: 1;
-  grid-row-end: 9;
-  grid-column-start: 2;
-  grid-column-end: 8;
-  display: grid;
-  grid-auto-rows: max-content;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
 }

@@ -10,7 +10,7 @@ export const fire = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `
 
-export const [columns, grids, c1, g1] = [
+export const [columns, grids] = [
   `<svg
 width="24"
 height="20"
@@ -29,26 +29,6 @@ xmlns="http://www.w3.org/2000/svg"
 <path class="path" d="M0 9.23143H7.05882V0H0V9.23143ZM0 
 20H7.05882V10.7686H0V20ZM8.47059 20H15.5294V10.7686H8.47059V20ZM16.9412
  20H24V10.7686H16.9412V20ZM8.47059 9.23143H15.5294V0H8.47059V9.23143ZM16.9412 0V9.23143H24V0H16.9412Z" fill="#707070"/>
-</svg>
-`,
-  `<svg
-width="24"
-height="20"
-viewBox="0 0 24 20"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-<path class="path"
-  d="M0 12.8571H5.64706V7.14286H0V12.8571ZM0 20H5.64706V14.2857H0V20ZM0
-   5.71429H5.64706V0H0V5.71429ZM7.05882 12.8571H24V7.14286H7.05882V12.8571ZM7.05882
-    20H24V14.2857H7.05882V20ZM7.05882 0V5.71429H24V0H7.05882Z"
-  fill="#ff9100"
-/>
-</svg>`,
-  `<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path class="path" d="M0 9.23143H7.05882V0H0V9.23143ZM0 
-20H7.05882V10.7686H0V20ZM8.47059 20H15.5294V10.7686H8.47059V20ZM16.9412
- 20H24V10.7686H16.9412V20ZM8.47059 9.23143H15.5294V0H8.47059V9.23143ZM16.9412 0V9.23143H24V0H16.9412Z" fill="#ff9100"/>
 </svg>
 `,
 ]

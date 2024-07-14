@@ -2,7 +2,7 @@
   <section class="wrap">
     <div class="info">
       <h1 class="info-title">Эксклюзивное меню на Ваш вкус</h1>
-      <router-link to="/STORE/menu" class="text router"
+      <router-link to="/menu" class="text router"
         >Смотреть всё меню</router-link
       >
       <btn
@@ -13,7 +13,7 @@
         width="316"
         :img="fire"
         imgMargin="0 18px 0 0"
-        @click="$router.push('/STORE/menu')"
+        @click="$router.push('/menu')"
       />
     </div>
     <div class="galery" ref="container">
@@ -30,7 +30,14 @@
             "
           ></div>
         </div>
-        <router-link to="/STORE/menu" class="text link"
+        <router-link
+          to="/menu"
+          class="text link"
+          @click="
+            
+              setMenuList()
+            
+          "
           >Смотреть всё</router-link
         >
       </div>
