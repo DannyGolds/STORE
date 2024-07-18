@@ -16,7 +16,6 @@ let store = createStore({
       menuOptions,
       mainGallery: [],
       menu: [],
-      lastSeenProductFull,
     }
   },
   mutations: {

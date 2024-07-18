@@ -1,18 +1,23 @@
 <template>
-  <div class="menu-book" :class="{ dark: menuOptions.isDarkTheme }">
-    <product-cart
-      v-for="item in menuList[menuOptions.activeListMenu].assort[
-        menuOptions.activeItemMenu
-      ].assort"
-      :key="item"
-      :img="item.img"
-      :title="item.title"
-      :description="item.desc"
-      :price="item.price"
-      :id="item.id"
-      :isDarkTheme="menuOptions.isDarkTheme"
-      ><</product-cart
-    >
+  <div class="menu-book" :class="{ dark: options.isDarkTheme }">
+    <Suspense v-if="menuList != '' && options != ''">
+      <template #default>
+        <product-cart
+          
+          v-for="item in menuList[options.activeListMenu].assort[
+            options.activeItemMenu
+          ].assort"
+          :key="item"
+          :img="item.img[0]"
+          :title="item.title"
+          :description="item.desc"
+          :price="item.price"
+          :id="item.id"
+          :isDarkTheme="options.isDarkTheme"
+        />
+      </template>
+      <template #fallback>loading...</template>
+    </Suspense>
   </div>
 </template>
 
@@ -23,17 +28,16 @@ export default {
   components: {
     ProductCart,
   },
-
-  created() {
-    this.$store.dispatch("initMenuPage")
-  },
   computed: {
     menuList() {
       return this.$store.getters.getMenu
     },
-    menuOptions() {
+    options() {
       return this.$store.getters.getMenuOptions
     },
+  },
+  created() {
+    this.$store.dispatch("initMenuPage")
   },
 }
 </script>

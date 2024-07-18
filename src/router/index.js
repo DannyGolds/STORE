@@ -25,7 +25,7 @@ const routes = [
     component: menuPage,
     children: [
       {
-        path: "cmn",
+        path: "",
         name: "menu",
         component: CommonMenu,
       },

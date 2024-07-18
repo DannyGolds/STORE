@@ -6,7 +6,7 @@ export const nav = [
   },
   {
     urlTitle: "меню",
-    urlPath: "/menu/cmn",
+    urlPath: "/menu/",
     urlName: "menu",
   },
   {

@@ -1,6 +1,12 @@
 <template>
   <div class="cart" :class="{ dark: isDarkTheme }">
-    <img :src="img" alt="" class="cart-img" :class="{ dark: isDarkTheme }" />
+    <img
+      :src="img"
+      alt=""
+      class="cart-img"
+      :class="{ dark: isDarkTheme }"
+      v-if="!$route.path.includes('cart')"
+    />
     <router-link
       class="cart-title link"
       :class="{ dark: isDarkTheme }"

@@ -1,7 +1,7 @@
 <template>
   <section class="menu">
     <breadcrumbs before="Главная / Меню /" active="Алкогольные напитки" />
-    <filtered />
+    <filtered v-show="$route.path.endsWith('menu/') | $route.path.endsWith('menu')"/>
     <div class="container">
       <div class="content">
         <aside class="menu-bar" id="sidebar">
